@@ -1,0 +1,141 @@
+body {
+    font-family: 'San Francisco', Arial, sans-serif; /* Agregué Arial como alternativa */
+    background-color: rgb(255, 255, 255);
+    background-image: url('C:/Users/kddhd/Desktop/DISEÑO/14_Florido_cobo_JoseCarlos/chuches4.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.barraNavegacion {
+    /* background-color: rgba(255, 255, 255, 0.8); Color de fondo con opacidad */
+    overflow: hidden;
+    display: flex; /* Flexbox para alinear elementos */
+    justify-content: space-between; /* Espacio entre el logo y el menú */
+    padding: 10px 20px; /* Espaciado interno */
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+.botonHome {
+    width: 80px;
+    height: 80px;
+    border: none;
+    /* background: rgb(255, 255, 255); */
+    margin-right: 0px; /* Espacio entre el logo y el menú */ 
+    transition: background-color 0.3s; /* Añadido para el efecto de transición */
+}
+
+.botonHome :hover {
+    background-color: rgb(0, 0, 0); /* Efecto de hover */
+    border-radius: 30px; /* Bordes redondeados */
+}
+
+.logoHome {
+    width: 100%;
+    height: 100%;
+    display: block;/* Hace que todo el área del enlace sea clicable */
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+
+.Navmenu {
+    margin-left: auto; /* Empuja el menú a la derecha */
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos del menú */
+}
+
+.menu li {
+    margin-right: 20px; /* Espacio entre los elementos del menú */
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    padding: 10px 15px; /* Añadido para aumentar el área de clic */
+    transition: background-color 0.3s; /* Añadido para el efecto de transición */
+}
+
+.menu li a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Efecto de hover */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.submenu {
+    display: none; /* Ocultar el menú desplegable por defecto */
+    position: absolute; /* Posiciona el submenu respecto a su padre */
+    top: 0%; /* Posiciona el submenu justo debajo del elemento padre */
+    right: 0; /* Alinea el submenu a la izquierda */
+    background-color: white; /* Fondo blanco para el submenu */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para el submenu */
+    z-index: 1000; /* Asegura que el submenu esté por encima de otros elementos */
+    list-style-type: none;/* Elimina los puntos de la lista del submenu */
+    padding: 0; /* Elimina el padding del submenu */
+    margin: 0; /* Elimina el margen del submenu */
+    
+}
+
+.menu li:hover .submenu {
+    display: block; /* Muestra el menú desplegable al pasar el mouse sobre el elemento padre */
+}
+
+.submenu li {
+    margin: 0; /* Sin margen para los elementos del submenu */
+}
+
+.submenu li a {
+    padding: 10px 20px; /* Espaciado en los enlaces del submenu */
+    display: block; /* Hace que todo el área del enlace sea clicable */
+}
+
+/* Estilos para la sección de productos más comprados */
+.productos-mas-comprados {
+    padding: 20px; 
+    text-align: center; 
+}
+
+.productos-mas-comprados h2 {
+    font-size: 28px; 
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.651);
+}
+
+.productos-mas-comprados h2 span:nth-child(1) { color: red; }
+.productos-mas-comprados h2 span:nth-child(2) { color: orange; }
+.productos-mas-comprados h2 span:nth-child(3) { color: yellow; }
+.productos-mas-comprados h2 span:nth-child(4) { color: green; }
+.productos-mas-comprados h2 span:nth-child(5) { color: blue; }
+/* Repite para las demás letras */
+.productos-mas-comprados h2 span:nth-child(6), 
+.productos-mas-comprados h2 span:nth-child(7),
+.productos-mas-comprados h2 span:nth-child(8) { color: purple; }
+.productos-mas-comprados h2 span:nth-child(9) { color: red; }
+.productos-mas-comprados h2 span:nth-child(10) { color: orange; }
+.productos-mas-comprados h2 span:nth-child(11) { color: yellow; }
+.productos-mas-comprados h2 span:nth-child(12) { color: green; }
+.productos-mas-comprados h2 span:nth-child(13) { color: blue; }
+.productos-mas-comprados h2 span:nth-child(14) { color: purple; }
+.productos-mas-comprados h2 span:nth-child(15) { color: red; }
+.productos-mas-comprados h2 span:nth-child(16) { color: orange; }
+.productos-mas-comprados h2 span:nth-child(17) { color: yellow; }
+.productos-mas-comprados h2 span:nth-child(18) { color: green; }
+.productos-mas-comprados h2 span:nth-child(19) { color: blue; }
+.productos-mas-comprados h2 span:nth-child(20) { color: purple; }
+.productos-mas-comprados h2 span:nth-child(21) { color: red; }
+.productos-mas-comprados h2 span:nth-child(22) { color: orange; }
+.productos-mas-comprados h2 span:nth-child(23) { color: yellow; }
+
+.producto {
+    display: inline-block; /* Para mostrar en línea */
+    margin: 10px; 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    background-color: white; 
+}
