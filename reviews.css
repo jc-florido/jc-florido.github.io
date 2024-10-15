@@ -1,13 +1,14 @@
 body {
     font-family: 'San Francisco', Arial, sans-serif; /* Agregué Arial como alternativa */
     background-color: rgb(255, 255, 255);
+    background-image: url(images/chuches6.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .barraNavegacion {
-    background-color: rgba(255, 255, 255, 0.8); /* Color de fondo con opacidad */
+    /* background-color: rgba(255, 255, 255, 0.8); Color de fondo con opacidad */
     overflow: hidden;
     display: flex; /* Flexbox para alinear elementos */
     justify-content: space-between; /* Espacio entre el logo y el menú */
@@ -91,4 +92,64 @@ body {
 .submenu li a {
     padding: 10px 20px; /* Espaciado en los enlaces del submenu */
     display: block; /* Hace que todo el área del enlace sea clicable */
+}
+
+.formularioReview {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"], form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.listaReviews {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.review {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.review .nombre {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.review .rating {
+    color: #f39c12;
 }
